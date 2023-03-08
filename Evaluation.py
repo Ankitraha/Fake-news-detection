@@ -12,6 +12,7 @@ from keras.models import load_model  # TensorFlow is required for Keras to work
 from PIL import Image, ImageOps  # Install pillow instead of PIL
 import numpy as np
 from bs4 import BeautifulSoup
+model = load_model("fake_news_detection_model.h5", compile=False)
 def link_input(link):
     url = link
     # Send a request to the URL and retrieve the page content
